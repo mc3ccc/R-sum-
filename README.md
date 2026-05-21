@@ -1,21 +1,20 @@
-# Macodo Owebi - Professional Résumé (CV)
+# Macodo Owebi - Professional Résumé
 
-Modern, clean, and professional single-page résumé built with HTML, Tailwind CSS, and JavaScript.
+Modern and clean single-page résumé for Macodo Owebi (@Mcoweiji).
 
 ## ✨ Features
-- Fully responsive design
-- 3 clean sections (Profile, Expertise, Experience)
-- Print-ready (optimized for PDF)
-- Hosted live via GitHub Pages
+- Professional dark theme with yellow accents
+- 3 sections: Profile, Expertise, Experience
+- Fully responsive
+- Print-ready (PDF optimized)
+- Hosted with GitHub Pages
 
-## Live Link
-[View Résumé →](https://mc3ccc.github.io/resume)
+## Live Demo
+→ [View Résumé](https://yourusername.github.io/resume)
 
-## Technologies
-- HTML5
-- Tailwind CSS (via CDN)
-- Font Awesome
-- Vanilla JavaScript
+## Technologies Used
+- HTML5, Tailwind CSS, JavaScript
+- Font Awesome Icons
 
 ## License
-Open source for personal use. 
+Feel free to use this template for your own résumé.
