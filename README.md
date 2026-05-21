@@ -10,7 +10,7 @@ Modern and clean single-page résumé for Macodo Owebi.
 - Hosted with GitHub Pages
 
 ## Live Demo
-→ [View Résumé](https://mc3ccc.github.io/resume)
+→ [View Résumé](https://mc3ccc.github.io/r-sum-/index.html)
 
 ## Technologies Used
 - HTML5, Tailwind CSS, JavaScript
