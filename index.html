@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macodo Owebi - Cybersecurity Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', system-ui, sans-serif;
+        }
+        
+        .nav-link {
+            transition: all 0.3s;
+        }
+        
+        .nav-link.active {
+            border-bottom: 3px solid rgb(234 179 8);
+            color: rgb(234 179 8);
+        }
+        
+        .section {
+            display: none;
+        }
+        
+        .section.active {
+            display: block;
+        }
+        
+        .card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .card:hover {
+            transform: translateY(-8px);
+        }
+        
+        .skill-tag {
+            background-color: #27272a;
+            color: #eab308;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            border: 1px solid #3f3f46;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-100 min-h-screen">
+
+    <!-- Header -->
+    <header class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <div class="w-11 h-11 bg-yellow-500 text-zinc-950 rounded-2xl flex items-center justify-center font-bold text-2xl">MO</div>
+                <div>
+                    <h1 class="text-2xl font-bold">Macodo Owebi</h1>
+                    <p class="text-yellow-400 text-sm">Cybersecurity Penetration Tester & Cloud Security Engineer</p>
+                </div>
+            </div>
+
+            <nav class="flex gap-8 text-sm font-medium">
+                <a href="#" onclick="switchSection(0)" class="nav-link active" id="nav-0">PROFILE</a>
+                <a href="#" onclick="switchSection(1)" class="nav-link" id="nav-1">EXPERTISE</a>
+                <a href="#" onclick="switchSection(2)" class="nav-link" id="nav-2">EXPERIENCE</a>
+            </nav>
+
+            <a href="https://x.com/Mcoweiji" target="_blank" class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                <i class="fa-brands fa-x-twitter"></i>
+                <span>@Mcoweiji</span>
+            </a>
+        </div>
+    </header>
+
+    <div class="max-w-5xl mx-auto px-6 py-10">
+
+        <!-- SECTION 1: PROFILE -->
+        <div id="section-0" class="section active">
+            <div class="grid md:grid-cols-12 gap-10">
+                <div class="md:col-span-4 space-y-8">
+                    <div class="bg-zinc-900 rounded-3xl p-8 card">
+                        <h2 class="text-yellow-400 text-lg font-semibold mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-user"></i> CONTACT
+                        </h2>
+                        <div class="space-y-5 text-sm">
+                            <div class="flex gap-3"><i class="fa-solid fa-envelope w-5 text-yellow-500"></i> your.email@example.com</div>
+                            <div class="flex gap-3"><i class="fa-solid fa-phone w-5 text-yellow-500"></i> +234 000 000 0000</div>
+                            <div class="flex gap-3"><i class="fa-solid fa-location-dot w-5 text-yellow-500"></i> Lagos, Nigeria</div>
+                            <div class="flex gap-3"><i class="fa-brands fa-linkedin w-5 text-yellow-500"></i> linkedin.com/in/macodoowebi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-8">
+                    <h2 class="text-4xl font-bold leading-tight">Hello, I'm Macodo Owebi.</h2>
+                    <p class="text-zinc-400 text-lg mt-4 leading-relaxed">
+                        Passionate Cybersecurity Penetration Tester and Security Onion expert with strong experience in Cloud Administration (Azure & AWS), 
+                        infrastructure security, and automation.
+                    </p>
+
+                    <div class="mt-10 grid grid-cols-2 gap-6">
+                        <div class="bg-zinc-900 p-6 rounded-3xl card">
+                            <i class="fa-solid fa-shield-halved text-4xl text-yellow-500 mb-4"></i>
+                            <h4 class="font-semibold">Penetration Testing</h4>
+                            <p class="text-sm text-zinc-400 mt-2">Web, API, Network & Cloud Security Assessments</p>
+                        </div>
+                        <div class="bg-zinc-900 p-6 rounded-3xl card">
+                            <i class="fa-solid fa-server text-4xl text-yellow-500 mb-4"></i>
+                            <h4 class="font-semibold">Security Onion Expert</h4>
+                            <p class="text-sm text-zinc-400 mt-2">Advanced Threat Detection & Monitoring</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 2: EXPERTISE -->
+        <div id="section-1" class="section">
+            <h2 class="text-3xl font-bold mb-8">Technical Expertise</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-zinc-900 rounded-3xl p-8">
+                    <h3 class="text-xl font-semibold mb-6">Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag">Penetration Testing</span>
+                        <span class="skill-tag">Vulnerability Assessment</span>
+                        <span class="skill-tag">Security Onion</span>
+                        <span class="skill-tag">Threat Hunting</span>
+                        <span class="skill-tag">Azure Security</span>
+                        <span class="skill-tag">AWS Security</span>
+                        <span class="skill-tag">Cloud Administration</span>
+                        <span class="skill-tag">Incident Response</span>
+                        <span class="skill-tag">Server Maintenance</span>
+                    </div>
+                </div>
+
+                <div class="bg-zinc-900 rounded-3xl p-8">
+                    <h3 class="text-xl font-semibold mb-6">Programming & IaC</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4"><div class="w-9 h-9 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-400 font-bold">Py</div><span class="font-medium">Python</span></div>
+                        <div class="flex items-center gap-4"><div class="w-9 h-9 bg-yellow-500/10 rounded-2xl flex items-center justify-center text-yellow-400 font-bold">JS</div><span class="font-medium">JavaScript</span></div>
+                        <div class="flex items-center gap-4"><div class="w-9 h-9 bg-teal-500/10 rounded-2xl flex items-center justify-center text-teal-400 font-bold">TF</div><span class="font-medium">Terraform</span></div>
+                        <div class="flex items-center gap-4"><div class="w-9 h-9 bg-cyan-500/10 rounded-2xl flex items-center justify-center text-cyan-400 font-bold">Go</div><span class="font-medium">Go (Golang)</span></div>
+                        <div class="flex items-center gap-4"><div class="w-9 h-9 bg-purple-500/10 rounded-2xl flex items-center justify-center text-purple-400 font-bold">sh</div><span class="font-medium">Bash</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 bg-zinc-900 rounded-3xl p-8">
+                <h3 class="text-xl font-semibold mb-6">Cloud Platforms</h3>
+                <div class="flex gap-12">
+                    <div class="flex items-center gap-4">
+                        <i class="fa-brands fa-microsoft text-5xl text-blue-500"></i>
+                        <div><p class="font-semibold">Microsoft Azure</p><p class="text-emerald-400 text-sm">Advanced</p></div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-brands fa-aws text-5xl text-orange-500"></i>
+                        <div><p class="font-semibold">Amazon Web Services</p><p class="text-emerald-400 text-sm">Advanced</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SECTION 3: EXPERIENCE -->
+        <div id="section-2" class="section">
+            <h2 class="text-3xl font-bold mb-10">Professional Experience</h2>
+            
+            <div class="space-y-12">
+                <div class="relative pl-8 border-l-4 border-yellow-500">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-yellow-500"></div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-semibold text-lg">Senior Penetration Tester & Cloud Security Engineer</p>
+                            <p class="text-yellow-400">Current Company • Lagos, Nigeria</p>
+                        </div>
+                        <p class="text-zinc-500">2023 — Present</p>
+                    </div>
+                    <ul class="mt-4 list-disc pl-5 space-y-2 text-zinc-300">
+                        <li>Performed advanced penetration testing on web applications, APIs, and cloud infrastructure.</li>
+                        <li>Deployed and managed Security Onion for enterprise threat detection.</li>
+                        <li>Automated security workflows using Python, Bash, and Terraform.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 border-l-4 border-zinc-700">
+                    <div class="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-zinc-700"></div>
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <p class="font-semibold text-lg">Cloud Administrator & Systems Engineer</p>
+                            <p class="text-zinc-400">Previous Company</p>
+                        </div>
+                        <p class="text-zinc-500">2021 — 2023</p>
+                    </div>
+                    <ul class="mt-4 list-disc pl-5 space-y-2 text-zinc-300">
+                        <li>Managed Azure and AWS cloud environments.</li>
+                        <li>Implemented Infrastructure as Code with Terraform and Go.</li>
+                        <li>Handled server maintenance and security hardening.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Print Button -->
+    <button onclick="window.print()" 
+            class="fixed bottom-8 right-8 bg-yellow-500 hover:bg-yellow-400 text-zinc-950 font-semibold px-6 py-4 rounded-2xl flex items-center gap-3 shadow-2xl z-50">
+        <i class="fa-solid fa-print"></i>
+        <span>Print / Save as PDF</span>
+    </button>
+
+    <footer class="bg-zinc-900 py-6 text-center text-xs text-zinc-500 border-t border-zinc-800">
+        © 2026 Macodo Owebi • Professional Digital Résumé
+    </footer>
+
+    <script>
+        function switchSection(n) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById('section-' + n).classList.add('active');
+            
+            document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+            document.getElementById('nav-' + n).classList.add('active');
+        }
+    </script>
+</body>
+</html>

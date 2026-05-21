@@ -1,6 +1,6 @@
 # Macodo Owebi - Professional Résumé
 
-Modern and clean single-page résumé for Macodo Owebi (@Mcoweiji).
+Modern and clean single-page résumé for Macodo Owebi.
 
 ## ✨ Features
 - Professional dark theme with yellow accents
@@ -10,7 +10,7 @@ Modern and clean single-page résumé for Macodo Owebi (@Mcoweiji).
 - Hosted with GitHub Pages
 
 ## Live Demo
-→ [View Résumé](https://yourusername.github.io/resume)
+→ [View Résumé](https://mc3ccc.github.io/resume)
 
 ## Technologies Used
 - HTML5, Tailwind CSS, JavaScript
